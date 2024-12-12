@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Status Display</title>
+  <link rel="stylesheet" href="display-style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Status Updates</h1>
+  </header>
+
+  <main>
+    <div id="status-container">
+      <div>
+        <h2>Ticket System</h2>
+        <p><strong>Status:</strong> <span style="color: black;" id="ticket-status-display"></span></p>
+        <p><strong>Message:</strong> <span id="ticket-text-display"></span></p>
+      </div>
+    </div>
+  </main>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+  <script type="module" src="firebaseConfig.js"></script>
+  <script type="module" src="firebaseService.js"></script>
+  <script type="module" src="display.js"></script>
+</body>
+</html>
